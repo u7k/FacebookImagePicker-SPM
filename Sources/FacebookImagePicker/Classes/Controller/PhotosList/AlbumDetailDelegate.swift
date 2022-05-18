@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol AlbumDetailDelegate: class {
+protocol AlbumDetailDelegate: AnyObject {
     func didSelectImage(image: FacebookImage)
     func didDeselectImage(image: FacebookImage)
     func shouldSelectImage() -> Bool

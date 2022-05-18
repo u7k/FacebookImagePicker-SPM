@@ -297,7 +297,7 @@ public final class FacebookController {
                 let param = ["fields": "picture.width(600).height(600)"]
                 let graphRequest = GraphRequest(graphPath: "me",
                                                 parameters: param)
-                _ = graphRequest.start(completionHandler: { (_, result, error) -> Void in
+                _ = graphRequest.start { (_, result, error) -> Void in
                     if let error = error {
                         // KO
                         completion(.failure(error))
@@ -321,7 +321,7 @@ public final class FacebookController {
                         
                         completion(.failure(DownloadError.downloadError))
                     }
-                })
+                }
             } else {
                 // KO
                 completion(.failure(DownloadError.tokenError))

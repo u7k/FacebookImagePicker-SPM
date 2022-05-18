@@ -30,7 +30,7 @@ public final class FacebookAlbumController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override public func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         self.add(stateViewController)
@@ -41,7 +41,7 @@ public final class FacebookAlbumController: UIViewController {
         self.doFacebookLogin()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         self.navigationController?.setToolbarHidden(true, animated: false)

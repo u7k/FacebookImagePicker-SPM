@@ -12,14 +12,14 @@ import UIKit
 public final class FacebookImagePickerNavigationController: UINavigationController {
 
     // Status bar
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+    public override var preferredStatusBarStyle: UIStatusBarStyle {
         return FacebookImagePicker.pickerConfig.uiConfig.statusbarStyle
     }
 
     // MARK: - Lifecycle
 
     /// Initialize the navigation controller after didLoad
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Apply barTintColor if specified in config struct 

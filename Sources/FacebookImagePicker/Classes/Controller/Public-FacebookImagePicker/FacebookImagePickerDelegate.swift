@@ -9,7 +9,7 @@
 import UIKit
 #endif
 
-public protocol FacebookImagePickerDelegate: class {
+public protocol FacebookImagePickerDelegate: AnyObject {
 
     /// Called when one or more images are picked
     ///
