@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 29/09/2016.
 //  Copyright (c) 2016 Florian Gabach <contact@floriangabach.fr>
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 final class AlbumTableViewCell: UITableViewCell, Reusable {
 

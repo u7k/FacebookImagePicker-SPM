@@ -5,6 +5,8 @@
 //  Created by Florian Gabach on 30/09/2016.
 //  Copyright (c) 2016 Florian Gabach <contact@floriangabach.fr>
 
+import Foundation
+
 /// All the error type 
 ///
 /// - loginCancelled: When login webview are cancelled before login

@@ -5,7 +5,9 @@
 //  Created by Patrick Kaalund on 04/07/2018.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 extension Int {
     public func locallyFormattedString() -> String {

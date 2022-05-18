@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 05/12/2018.
 //
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
+#endif
 
 extension UIView {
     func bounce() {

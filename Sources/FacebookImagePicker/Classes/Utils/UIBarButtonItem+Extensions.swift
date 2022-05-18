@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 11/05/2018.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 extension UIBarButtonItem {
     class func flexibleSpaceItem() -> UIBarButtonItem {

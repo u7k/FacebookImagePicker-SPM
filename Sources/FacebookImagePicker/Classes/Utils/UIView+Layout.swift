@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 30/01/2018.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 extension UIView {
     func pinEdges(to other: UIView, withBorderSize size: CGFloat = 0.0) {

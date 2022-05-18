@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 21/11/2018.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 public protocol Reusable: class {
     static var reuseIdentifier: String { get }

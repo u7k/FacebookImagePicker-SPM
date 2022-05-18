@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 01/10/2016.
 //  Copyright (c) 2016 Florian Gabach <contact@floriangabach.fr>
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 class AsyncImageView: UIImageView {
 

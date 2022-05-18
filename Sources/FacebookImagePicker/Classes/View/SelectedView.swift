@@ -6,7 +6,9 @@
 //
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 public enum CheckViewPosition {
     case topLeft

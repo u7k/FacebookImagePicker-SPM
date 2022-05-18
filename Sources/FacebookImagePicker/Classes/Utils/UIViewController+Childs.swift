@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 14/11/2018.
 //
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
+#endif
 
 extension UIViewController {
     func add(_ child: UIViewController) {
