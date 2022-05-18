@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "FacebookImagePicker",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v14)],
     products: [
         .library(
             name: "FacebookImagePicker",
@@ -14,17 +14,19 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "https://github.com/facebook/facebook-ios-sdk", from: "13.2.0")
+        .package(url: "https://github.com/facebook/facebook-ios-sdk", .upToNextMajor(from: Version("13.2.0")))
+        
     ],
     targets: [
         .target(
             name: "FacebookImagePicker",
             dependencies: [
-//                .byNameItem(name: "FacebookCore", condition: nil),
-//                .byNameItem(name: "FacebookLogin", condition: nil)
-                .targetItem(name: "FacebookCore", condition: nil),
-                .targetItem(name: "FacebookLogin", condition: nil)
-
+                .productItem(name: "FacebookCore",
+                             package: "facebook-ios-sdk",
+                             condition: .when(platforms: [.iOS])),
+                .productItem(name: "FacebookLogin",
+                             package: "facebook-ios-sdk",
+                             condition: .when(platforms: [.iOS]))
             ]),
         .testTarget(
             name: "FacebookImagePickerTests",
