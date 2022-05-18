@@ -20,8 +20,11 @@ let package = Package(
         .target(
             name: "FacebookImagePicker",
             dependencies: [
-                .byNameItem(name: "FacebookCore", condition: nil),
-                .byNameItem(name: "FacebookLogin", condition: nil),
+//                .byNameItem(name: "FacebookCore", condition: nil),
+//                .byNameItem(name: "FacebookLogin", condition: nil)
+                .targetItem(name: "FacebookCore", condition: nil),
+                .targetItem(name: "FacebookLogin", condition: nil),
+
             ]),
         .testTarget(
             name: "FacebookImagePickerTests",
