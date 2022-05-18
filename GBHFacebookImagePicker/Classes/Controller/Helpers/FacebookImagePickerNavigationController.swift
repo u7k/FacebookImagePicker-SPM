@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FacebookImagePickerNavigationController: UINavigationController {
+public final class FacebookImagePickerNavigationController: UINavigationController {
 
     // Status bar
     override var preferredStatusBarStyle: UIStatusBarStyle {

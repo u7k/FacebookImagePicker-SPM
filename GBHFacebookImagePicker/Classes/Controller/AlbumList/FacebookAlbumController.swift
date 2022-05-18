@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FacebookAlbumController: UIViewController {
+public final class FacebookAlbumController: UIViewController {
     
     // MARK: - Var
     

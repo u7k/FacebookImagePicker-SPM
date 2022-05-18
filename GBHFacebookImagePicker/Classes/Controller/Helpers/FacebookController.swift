@@ -9,7 +9,7 @@ import Foundation
 import FBSDKLoginKit
 import FBSDKCoreKit
 
-final class FacebookController {
+public final class FacebookController {
     
     // MARK: - Singleton 
     
