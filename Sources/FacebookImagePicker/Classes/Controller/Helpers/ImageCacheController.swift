@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 12/09/2017.
 //
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
+#endif
 
 final class ImageCacheController {
 

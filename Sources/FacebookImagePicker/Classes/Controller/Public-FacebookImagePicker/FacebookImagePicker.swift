@@ -5,13 +5,14 @@
 //  Created by Florian Gabach on 09/10/2016.
 //  Copyright (c) 2016 Florian Gabach <contact@floriangabach.fr>
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 public class FacebookImagePicker: NSObject {
 
-    // Picker configuration settings
+    /// Picker configuration settings
     public static var pickerConfig = FacebookPickerConfig()
-
     private var facebookController = FacebookController()
 
     /// Present album picker

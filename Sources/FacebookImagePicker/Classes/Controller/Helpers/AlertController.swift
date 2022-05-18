@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 21/11/2018.
 //
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
+#endif
 
 final class AlertController {
     class func showPermissionAlert(fromController controller: UIViewController,

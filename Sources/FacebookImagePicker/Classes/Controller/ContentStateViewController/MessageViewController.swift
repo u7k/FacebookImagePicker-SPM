@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 17/11/2018.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 final class MessageViewController: UIViewController {
     

@@ -6,7 +6,9 @@
 //  Copyright © 2018 OpenSourceController. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 final class LoadingViewController: UIViewController {
 

@@ -5,7 +5,9 @@
 //  Created by Florian Gabach on 28/09/2016.
 //  Copyright (c) 2016 Florian Gabach <contact@floriangabach.fr>
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
+#endif
 import FBSDKLoginKit
 import FBSDKCoreKit
 

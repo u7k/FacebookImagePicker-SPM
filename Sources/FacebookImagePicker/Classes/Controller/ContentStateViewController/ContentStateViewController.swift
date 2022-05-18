@@ -6,7 +6,9 @@
 //  Copyright © 2018 OpenAirlines. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 final class ContentStateViewController: UIViewController {
 
