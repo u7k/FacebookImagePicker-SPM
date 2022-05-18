@@ -23,7 +23,7 @@ let package = Package(
 //                .byNameItem(name: "FacebookCore", condition: nil),
 //                .byNameItem(name: "FacebookLogin", condition: nil)
                 .targetItem(name: "FacebookCore", condition: nil),
-                .targetItem(name: "FacebookLogin", condition: nil),
+                .targetItem(name: "FacebookLogin", condition: nil)
 
             ]),
         .testTarget(
