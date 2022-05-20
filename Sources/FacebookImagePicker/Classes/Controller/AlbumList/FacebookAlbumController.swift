@@ -55,9 +55,9 @@ public final class FacebookAlbumController: UIViewController {
     }
     
     private func prepareCloseButton() {
-        let closeButton = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(self.closePicker))
+        let closeButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(self.closePicker))
         closeButton.tintColor = FacebookImagePicker.pickerConfig.uiConfig.closeButtonColor
-        self.navigationItem.rightBarButtonItem = closeButton
+        self.navigationItem.leftBarButtonItem = closeButton
     }
     
     // MARK: - Action
