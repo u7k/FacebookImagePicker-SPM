@@ -43,6 +43,7 @@ final class AlbumDetailController: UIViewController {
             action: #selector(actionSelectBarButton(sender:))
         )
         selectBarButton.isEnabled = false
+        selectBarButton..setTitleTextAttributes([.font: FacebookImagePicker.pickerConfig.uiConfig.selectButtonDisabledFont], for: .disabled)
         selectBarButton.setTitleTextAttributes([.font: FacebookImagePicker.pickerConfig.uiConfig.selectButtonFont], for: .normal)
         return selectBarButton
     }()
@@ -76,14 +77,20 @@ final class AlbumDetailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.add(stateViewController)
-        
+        self.configBackButton()
         self.prepareViewController()
         self.getPhotos()
     }
     
     // MARK: Prepare
+    
+    private func configBackButton() {
+        let backButton = UIBarButtonItem(title: FacebookImagePicker.pickerConfig.textConfig.backButtonText)
+        backButton.setTitleTextAttributes([.font: FacebookImagePicker.pickerConfig.uiConfig.cancelButtonFont], for: .normal)
+        backButton.tintColor = FacebookImagePicker.pickerConfig.uiConfig.closeButtonColor
+        navigationItem.backBarButtonItem = backButton
+    }
     
     private func prepareViewController() {
         self.title = self.album?.name ?? FacebookImagePicker.pickerConfig.textConfig.localizedPictures

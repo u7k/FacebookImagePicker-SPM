@@ -60,7 +60,9 @@ public struct FacebookPickerConfig {
         
         public var cancelButtonFont: UIFont = .systemFont(ofSize: 17)
 
-        public var selectButtonFont: UIFont = .systemFont(ofSize: 17, weight: .bold)
+        public var selectButtonDisabledFont: UIFont = .systemFont(ofSize: 17, weight: .semibold)
+
+        public var selectButtonFont: UIFont = .systemFont(ofSize: 17, weight: .semibold)
     }
 
     public struct TextConfig {
@@ -93,6 +95,9 @@ public struct FacebookPickerConfig {
         
         /// Name for no pictures in the albue
         public var localizedNoPicturesInAlbum: String = NSLocalizedString("No picture in this album.", comment: "")
+        
+        public var backButtonText: String = NSLocalizedString("Back", comment: "")
+
     }
 
     /// The picture corner radius. Used for display album cover and album's picture.
