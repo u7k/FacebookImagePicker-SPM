@@ -43,7 +43,7 @@ final class AlbumDetailController: UIViewController {
             action: #selector(actionSelectBarButton(sender:))
         )
         selectBarButton.isEnabled = false
-        selectBarButton..setTitleTextAttributes([.font: FacebookImagePicker.pickerConfig.uiConfig.selectButtonDisabledFont], for: .disabled)
+        selectBarButton.setTitleTextAttributes([.font: FacebookImagePicker.pickerConfig.uiConfig.selectButtonDisabledFont], for: .disabled)
         selectBarButton.setTitleTextAttributes([.font: FacebookImagePicker.pickerConfig.uiConfig.selectButtonFont], for: .normal)
         return selectBarButton
     }()
