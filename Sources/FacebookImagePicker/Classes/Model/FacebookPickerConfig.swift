@@ -57,7 +57,10 @@ public struct FacebookPickerConfig {
 
         /// Preview photos size (normal by default)
         public var previewPhotoSize: ImageSize = .normal
+        
+        public var cancelButtonFont: UIFont = .systemFont(ofSize: 17)
 
+        public var selectButtonFont: UIFont = .systemFont(ofSize: 17, weight: .bold)
     }
 
     public struct TextConfig {

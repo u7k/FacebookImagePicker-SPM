@@ -43,6 +43,7 @@ final class AlbumDetailController: UIViewController {
             action: #selector(actionSelectBarButton(sender:))
         )
         selectBarButton.isEnabled = false
+        selectBarButton.setTitleTextAttributes([.font: FacebookImagePicker.pickerConfig.uiConfig.selectButtonFont], for: .normal)
         return selectBarButton
     }()
     
@@ -94,7 +95,7 @@ final class AlbumDetailController: UIViewController {
         var items: [UIBarButtonItem] = [UIBarButtonItem.flexibleSpaceItem()]
         
         if FacebookImagePicker.pickerConfig.maximumSelectedPictures > 1 {
-            items.append(selectBarButton)
+            self.navigationItem.rightBarButtonItem = selectBarButton
             
             if FacebookImagePicker.pickerConfig.allowAllSelection {
                 items.insert(selectAllBarButton, at: 0)
